@@ -46,9 +46,20 @@ Before you begin, ensure you have the following installed:
 git clone <your-repository-url>
 cd todo-app
 ```
+##### install nodemodules
 
-### 2. Build and Run with Docker Compose
+```bash
+cd frontend
+npm install
+```
+```bash
+cd backend
+npm install
+```
 
+### 2. Build and Run with Docker Compose 
+
+RUN this from root directory
 ```bash
 # Build and start all services
 docker-compose up --build
@@ -84,20 +95,7 @@ docker-compose down -v
 
 ## 🧪 Running Tests
 
-### Quick Test (Recommended)
-
-**Windows:**
-```powershell
-.\run-tests-local.ps1
-```
-
-**Linux/Mac:**
-```bash
-chmod +x run-tests-local.sh
-./run-tests-local.sh
-```
-
-### Manual Testing
+### Manual Testing (best option)
 
 #### Backend Tests
 
@@ -201,7 +199,8 @@ todo-app/
 │   ├── tsconfig.json
 │   └── tailwind.config.js
 ├── docker-compose.yml
-└── README.md
+├── README.md
+└── TESTING.md 
 ```
 
 ## 🔧 API Endpoints
